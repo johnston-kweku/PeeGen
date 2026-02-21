@@ -34,7 +34,7 @@ let allChars = [upperCase, lowerCase, numbers, symbols]
 
 
 generate.addEventListener("click", () => {
-    loader.src = "/images/load.png"
+    loader.src = "images/load.png"
     loader.classList.add("animate-spin")
     text.textContent = "Generating Password..."
     password.textContent = ""
@@ -93,10 +93,10 @@ copy.addEventListener("click", () => {
     if(password.textContent != "Select at least one option") {
         navigator.clipboard.writeText(textToCopy)
         .then(() => {
-            copy.src = "/images/tick.svg";
+            copy.src = "images/tick.svg";
             copy.style.filter = "invert(48%) sepia(92%) saturate(394%) hue-rotate(85deg)";
             setTimeout(() => {
-                copy.src = "/images/copy-svgrepo-com.svg"
+                copy.src = "images/copy-svgrepo-com.svg"
                 copy.style.filter = ""
             }, 1500)
         })
