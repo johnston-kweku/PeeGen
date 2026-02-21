@@ -47,8 +47,6 @@ generate.addEventListener("click", () => {
 
         if(!full){
             password.textContent = "Select at least one option"
-            password.classList.add("text-red-500")
-            password.classList.add("font-extrabold")
             loader.classList.remove("animate-spin")
             text.textContent = "Generate Password"
             loader.src = ""
